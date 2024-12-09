@@ -1,0 +1,122 @@
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Navbar Logo */
+  .navbar-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: peru;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-light .navbar-logo {
+    color: black;
+  }
+  
+  .navbar-dark .navbar-logo {
+    color: peru;
+  }
+  
+  /* Navbar Links */
+  .nav-links {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: peru;
+    font-size: 1.1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover {
+    color: #f8f9fa;
+  }
+  
+  .navbar-dark .nav-links a {
+    color: peru;
+  }
+  
+  .navbar-light .nav-links a {
+    color: black;
+  }
+  
+  /* Mobile Menu Button */
+  .mobile-menu-icon {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: peru;
+  }
+  
+  .mobile-menu-icon:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Mobile Menu */
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .nav-links-mobile a {
+    color: peru;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-links-mobile a:hover {
+    color: #f8f9fa;
+  }
+  
+  /* Switch Button (Mode Toggle) */
+  .form-check-label {
+    font-size: 1rem;
+    color: peru;
+    font-weight: 500;
+    margin-left: 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .form-check-input {
+    transform: scale(1.3);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-icon {
+      display: block;
+      color: peru;
+    }
+  
+    .navbar-dark .mobile-menu-icon {
+      color: peru;
+    }
+  
+    .navbar-light .mobile-menu-icon {
+      color: black;
+    }
+  }
+  
